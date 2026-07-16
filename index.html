@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Remove backgrounds from images instantly using AI-powered technology. Free online background remover tool." />
+    <meta name="keywords" content="background remover, remove background, transparent background, image background remover, AI background removal, free background remover" />
+    <meta name="author" content="kellyseek" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#10b981" />
+    <link rel="canonical" href="https://kellyseek-background-remover.netlify.app/" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Background Remover - Remove Background from Images" />
+    <meta property="og:description" content="Remove backgrounds from images instantly using AI-powered technology. Free online background remover tool." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kellyseek-background-remover.netlify.app/" />
+    <meta property="og:image" content="https://kellyseek-background-remover.netlify.app/icons/icon-512x512.png" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Background Remover - Remove Background from Images" />
+    <meta name="twitter:description" content="Remove backgrounds from images instantly using AI-powered technology. Free online background remover tool." />
+    <meta name="twitter:image" content="https://kellyseek-background-remover.netlify.app/icons/icon-512x512.png" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    
+    <title>Background Remover - Remove Background from Images</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
