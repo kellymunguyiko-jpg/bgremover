@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kellyseek-background-remover.netlify.app/sitemap.xml
+Sitemap: https://bgairemover.netlify.app//sitemap.xml
